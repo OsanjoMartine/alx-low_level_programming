@@ -13,7 +13,7 @@ int main(void)
 
 	while (0 <= 9)
 	{
-		put(n);
+		puts(n);
 		n++;
 	}
 
