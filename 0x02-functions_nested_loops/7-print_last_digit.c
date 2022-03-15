@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - prints the sign of the number entered
- *@n: variable that could be any character
+ *@r: variable that could be any character
  *
  * Return: 1 (Success)
  */
