@@ -6,7 +6,7 @@
  *
  * Return: 1 (Success)
  */
-int int _abs(int n);
+int _abs(int n);
 {
 	int i = (int)n;
 
