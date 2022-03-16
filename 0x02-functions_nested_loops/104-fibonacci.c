@@ -8,9 +8,9 @@
  */
 void strict_fibonacci(void)
 {
-	unsigned long int fibo1;
-	unsigned long int fibo2;
-	unsigned long int holder;
+	unsigned long long int fibo1;
+	unsigned long long int fibo2;
+	unsigned long long int holder;
 	int i;
 
 	fibo1 = 0;
@@ -22,7 +22,7 @@ void strict_fibonacci(void)
 		fibo2 += fibo1;
 		fibo1 = holder;
 
-		printf("%lu", fibo2);
+		printf("%llu", fibo2);
 		if (i != 97)
 		{
 			printf(", ");
