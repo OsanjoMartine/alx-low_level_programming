@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
+void elsesmall(int prod, int j);
+void nine(int prod, int j);
+void ninenine(int prod, int j);
+
 /**
  * print_times_table - prints the n table of n passed
  * @n: this is a parameter passed for the table
@@ -25,43 +29,15 @@ void print_times_table(int n)
 			prod = i * j;
 			if (prod > 99)
 			{
-				if (j != 0)
-				{
-					_putchar(' ');
-				}
-				_putchar((prod / 100) % 10 + '0');
-				_putchar((prod / 10) % 10 + '0');
-				_putchar(prod % 10 + '0');
+				ninenine(prod, j);
 			}
 			else if (prod > 9)
 			{
-				if (j == 0)
-				{
-					_putchar((prod / 10) % 10 + '0');
-					_putchar(prod % 10 + '0');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((prod / 10) % 10 + '0');
-					_putchar(prod % 10 + '0');
-
-				}
+				nine(prod, j);
 			}
 			else
 			{
-				if (j == 0)
-				{
-					_putchar(prod % 10 + '0');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(prod % 10 + '0');
-				}
+				elsesmall(prod, j);
 			}
 			if (j != n)
 			{
@@ -69,5 +45,68 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
+	}
+}
+
+/**
+ * ninenine - prints the n table of n passed
+ * @prod: this is a parameter passed for the table
+ * @j: this is a parameter passed for the table
+ *
+ * Return: 0 (Success)
+ */
+void ninenine(int prod, int j)
+{
+	if (j != 0)
+	{
+		_putchar(' ');
+	}
+	_putchar((prod / 100) % 10 + '0');
+	_putchar((prod / 10) % 10 + '0');
+	_putchar(prod % 10 + '0');
+}
+
+/**
+ * nine - prints the n table of n passed
+ * @prod: this is a parameter passed for the table
+ * @j: this is a parameter passed for the table
+ *
+ * Return: 0 (Success)
+ */
+void nine(int prod, int j)
+{
+	if (j == 0)
+	{
+		_putchar((prod / 10) % 10 + '0');
+		_putchar(prod % 10 + '0');
+	}
+	else
+	{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar((prod / 10) % 10 + '0');
+		_putchar(prod % 10 + '0');
+	}
+}
+
+/**
+ * elsesmall - prints the n table of n passed
+ * @prod: this is a parameter passed for the table
+ * @j: this is a parameter passed for the table
+ *
+ * Return: 0 (Success)
+ */
+void elsesmall(int prod, int j)
+{
+	if (j == 0)
+	{
+		_putchar(prod % 10 + '0');
+	}
+	else
+	{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(prod % 10 + '0');
 	}
 }
