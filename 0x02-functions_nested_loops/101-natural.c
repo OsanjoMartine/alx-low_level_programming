@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_sum_multiples_1024 - prints 
+ * print_sum_multiples_1024 - prints
  * the sum of natural numbers divisible by 3 or 5 upto 1024
  *
  * Return: 0 (Success)
