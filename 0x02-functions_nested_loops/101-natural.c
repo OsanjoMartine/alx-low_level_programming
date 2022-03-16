@@ -19,7 +19,7 @@ void print_sum_multiples_1024(void)
 	}
 
 	printf("%d", sum);
-	_putchar('\n');
+	printf("\n");
 }
 
 /**
