@@ -8,10 +8,10 @@
  */
 void even_liber_abbaci(void)
 {
-	int fibo1;
-	int fibo2;
-	int holder;
-	int sum;
+	unsigned long fibo1;
+	unsigned long fibo2;
+	unsigned long holder;
+	unsigned long sum;
 
 	fibo1 = 0;
 	fibo2 = 1;
@@ -27,7 +27,7 @@ void even_liber_abbaci(void)
 		fibo1 = holder;
 	}
 
-	printf("%d", sum);
+	printf("%lu", sum);
 	printf("\n");
 }
 
