@@ -23,7 +23,7 @@ void strict_fibonacci(void)
 		fibo1 = holder;
 
 		printf("%lu", fibo2);
-		if (i != 49)
+		if (i != 97)
 		{
 			printf(", ");
 		}
