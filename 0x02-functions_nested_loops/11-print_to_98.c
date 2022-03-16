@@ -4,7 +4,7 @@
 
 /**
  * print_to_98 - print to 98
- *@n this is a parameter
+ * @n: list range to 98
  *
  * Return: void
  */
