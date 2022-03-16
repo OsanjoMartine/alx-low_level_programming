@@ -18,7 +18,7 @@ void even_liber_abbaci(void)
 
 	while (fibo2 < 4000000 && fibo2 > 0)
 	{
-		if ( fibo2 % 2 == 0)
+		if (fibo2 % 2 == 0)
 		{
 			sum += fibo2;
 		}
@@ -27,7 +27,7 @@ void even_liber_abbaci(void)
 		fibo1 = holder;
 	}
 
-    printf("%d", sum);
+	printf("%d", sum);
 	printf("\n");
 }
 
