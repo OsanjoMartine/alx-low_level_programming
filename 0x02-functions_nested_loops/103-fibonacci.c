@@ -19,14 +19,14 @@ void even_liber_abbaci(void)
 
 	for (i = 0; i < 50; i++)
 	{
-        	if (fibo2 >= 4000000)
-        	{
-            		printf("%lu", sum);
-            		printf("\n");
-            		return;
-        	}
+		if (fibo2 >= 4000000)
+		{
+			printf("%lu", sum);
+			printf("\n");
+			return;
+		}
 
-	        sum += fibo2;
+		sum += fibo2;
 		holder = fibo2;
 		fibo2 += fibo1;
 		fibo1 = holder;
