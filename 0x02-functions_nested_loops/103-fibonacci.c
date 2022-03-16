@@ -18,10 +18,10 @@ void even_liber_abbaci(void)
 
 	while (fibo2 < 4000000 && fibo2 > 0)
 	{
-        if ( fibo2 % 2 == 0)
-        {
-		    sum += fibo2;
-        }
+		if ( fibo2 % 2 == 0)
+		{
+			sum += fibo2;
+		}
 		holder = fibo2;
 		fibo2 += fibo1;
 		fibo1 = holder;
