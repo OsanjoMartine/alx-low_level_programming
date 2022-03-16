@@ -3,7 +3,7 @@
 /**
  * add - adds tw integers
  *
- * Return: int
+ * Return: int (Success)
  */
 int add(int i, int j)
 {
