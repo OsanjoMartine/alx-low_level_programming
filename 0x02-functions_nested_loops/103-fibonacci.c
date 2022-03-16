@@ -8,30 +8,27 @@
  */
 void even_liber_abbaci(void)
 {
-	unsigned long int fibo1;
-	unsigned long int fibo2;
-	unsigned long int holder;
-	unsigned long int sum;
-	int i;
+	int fibo1;
+	int fibo2;
+	int holder;
+	int sum;
 
 	fibo1 = 0;
 	fibo2 = 1;
 
-	for (i = 0; i < 50; i++)
+	while (fibo2 < 4000000 && fibo2 > 0)
 	{
-		if (fibo2 >= 4000000)
-		{
-			printf("%lu", sum);
-			printf("\n");
-			return;
-		}
-
-		sum += fibo2;
+        if ( fibo2 % 2 == 0)
+        {
+		    sum += fibo2;
+        }
 		holder = fibo2;
 		fibo2 += fibo1;
 		fibo1 = holder;
-
 	}
+
+    printf("%d", sum);
+	printf("\n");
 }
 
 
