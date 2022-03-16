@@ -4,6 +4,7 @@
 
 /**
  * print_to_98 - print to 98
+ *@n this is a parameter
  *
  * Return: void
  */
