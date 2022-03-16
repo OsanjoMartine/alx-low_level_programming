@@ -23,7 +23,7 @@ void fibonacci(void)
         fibo1 = holder;
 
         printf("%d", fibo2);
-        printf(",");
+        printf(", ");
     }
     printf("\n");
 }
