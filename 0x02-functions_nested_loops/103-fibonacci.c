@@ -42,7 +42,7 @@ void even_liber_abbaci(void)
  */
 int main(void)
 {
-    even_liber_abbaci();
+	even_liber_abbaci();
 
 	return (0);
 }
