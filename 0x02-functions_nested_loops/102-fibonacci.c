@@ -8,9 +8,9 @@
  */
 void fibonacci(void)
 {
-    int fibo1;
-    int fibo2;
-    int holder;
+    unsigned long int fibo1;
+    unsigned long int fibo2;
+    unsigned long int holder;
     int i;
 
     fibo1 = 0;
@@ -22,8 +22,11 @@ void fibonacci(void)
         fibo2 += fibo1;
         fibo1 = holder;
 
-        printf("%d", fibo2);
-        printf(", ");
+        printf("%lu", fibo2);
+        if (i != 49)
+        {
+            printf(", ");
+        }
     }
     printf("\n");
 }
