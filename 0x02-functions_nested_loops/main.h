@@ -14,3 +14,4 @@ void print_times_table(int n);
 void print_sum_multiples_1024(void);
 void fibonacci(void);
 void  even_liber_abbaci(void);
+void strict_fibonacci(void);
