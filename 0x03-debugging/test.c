@@ -2,10 +2,12 @@
 
 int main(void)
 {
-    int var = 5;
-    printf("var: %d\n", var);
+    int i;
 
-    printf("address of var: %p", &var); 
-
-    return (0);
+i = -9;
+while (i < 0)
+{
+    printf("%d", -i);
+    i++;
+}
 }
