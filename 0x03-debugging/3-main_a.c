@@ -19,7 +19,7 @@ int main(void)
     month = 4;
     day = 01;
     year = 1997;
-    month1 = 02;
+    month1 = 2;
     day1 = 29;
     year1 = 2000;
 
@@ -29,7 +29,7 @@ int main(void)
 
     printf("Date: %02d/%02d/%04d\n", month1, day1, year1);
     day = convert_day(month1, day1);
-    print_remaining_days(month1, day1, year1);
+    print_remaining_days(month1, day, year1);
 
     return (0);
 }
