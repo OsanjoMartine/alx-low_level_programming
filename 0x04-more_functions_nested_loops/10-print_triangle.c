@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_square - print squares
+ * print_triangle - print squares
  * @size: sides
  *
  * Return: void
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i;
 	int j;
