@@ -23,10 +23,3 @@ void more_numbers(void)
 		_putchar('\n');
 	}
 }
-
-int main(void)
-{
-	more_numbers();
-
-	return (0);
-}
